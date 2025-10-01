@@ -93,9 +93,6 @@ print(f"After sorting: {ingredients}")
 ingredients.reverse()  # Reverse in place
 print(f"After reversing: {ingredients}")
 
-# 5. LIST COMPREHENSION (Advanced)
-squared_numbers = [x**2 for x in range(5)]
-print(f"Squared numbers: {squared_numbers}")
 
 # 6. COPYING LISTS
 original = [1, 2, 3]
@@ -171,9 +168,23 @@ coordinates = (10, 20)  # Point coordinates - fixed
 print(f"RGB color (fixed): {rgb_color}")
 print(f"Coordinates (fixed): {coordinates}")
 
+
 # Function returning multiple values (tuples)
 def get_name_age():
     return ("John", 25)  # Returns a tuple
 
 name, age = get_name_age()  # Tuple unpacking
 print(f"Name: {name}, Age: {age}")
+
+
+# Operator Overloading
+
+managers = ["John", "Jane", "Jim", "Jill"]
+employees = ["Jack", "Jill", "Jim", "John"]
+
+all_people = managers + employees
+print(f"All people: {all_people}")
+
+numbers = [1, 2, 3, 4, 5] * 3 
+print(f"Numbers: {numbers}")
+
