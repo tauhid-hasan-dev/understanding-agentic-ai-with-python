@@ -1,4 +1,4 @@
-snack = input("Waht is your favorite snack? : ").lower()
+snack = input("What is your favorite snack? : ").lower()
 
 
 if snack == "cookies" or snack == "samosa":
