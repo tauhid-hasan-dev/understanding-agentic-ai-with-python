@@ -10,8 +10,21 @@ discounts = {
     "P50": (0.4, 10)
 }
 
+
+# Traditional match case approach
+# match user["coupon"]:
+#     case "P20":
+#         percent, fixed = 0.2, 0
+#     case "F10":
+#         percent, fixed = 0.3, 0
+#     case "P50":
+#         percent, fixed = 0.4, 10
+#     case _:
+#         percent, fixed = 0, 0
+
+
 for user in users:
-    percent, fixed = discounts.get(user["coupon"])
+    percent, fixed = discounts.get(user["coupon"], (0, 0))
     print(f"{percent} and {fixed}")
     discount = user["total"]* percent + fixed
     print(f"user {user['id']} paid {user['total']} and discount is:{discount}")
