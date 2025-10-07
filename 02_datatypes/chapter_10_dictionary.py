@@ -1,4 +1,22 @@
-# difference bwteen dict and list
+
+
+
+# What is a Dictionary in Python?
+# A dictionary in Python is a collection data type that stores data in key-value pairs. It's similar to a real-world dictionary where you look up a word (key) to find its definition (value).
+# Key Characteristics:
+# Key-Value Structure: Each item consists of a key and its corresponding value
+# Mutable: You can modify dictionaries after creation
+# Unordered: Items don't have a fixed order (though Python 3.7+ maintains insertion order)
+
+
+# # Method 1: Using curly braces
+# my_dict = {"key1": "value1", "key2": "value2"}
+
+# # Method 2: Using dict() constructor
+# my_dict = dict(key1="value1", key2="value2")
+
+# # Method 3: Empty dictionary
+# my_dict = {}
 
 muzlu_sut = dict(type="muzlu_sut", taste="sut", sugar=10)
 print("muzlu_sut: ", muzlu_sut)
