@@ -14,7 +14,6 @@ value = 13
 # print(f"Size is unavailable - {requested_size}")
 
 
-
 flavors = ["masala", "ginger", "karak", "minit"]
 
 print ("Avialable flavours: ", flavors)
