@@ -9,6 +9,8 @@ chai_type = "Lemon" #global scope
 serve_chai()
 print(f"Outside function : {chai_type}")
 
+chai_order = "Tulsi"
+
 # Enclosing scope
 def chai_counter():
     chai_order = "lemon" # Enclosing scope
@@ -18,5 +20,5 @@ def chai_counter():
     print_order()
     print("Outer: ", chai_order)
 
-chai_order = "Tulsi"
+chai_counter()
 print("Global", chai_order)
