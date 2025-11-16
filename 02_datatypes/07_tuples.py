@@ -48,7 +48,7 @@ print("\n" + "-" * 40)
 print("1. TUPLE UNPACKING")
 print("-" * 40)
 
-# Basic unpacking
+# Basic unpacking (destructuring)
 (spice_1, spice_2, spice_3) = spice_mix
 print(f"Spice 1: {spice_1}")
 print(f"Spice 2: {spice_2}")
@@ -58,16 +58,16 @@ print(f"Spice 3: {spice_3}")
 ginger_ratio, cumin_ratio = 5, 1
 print(f"Ginger ratio: {ginger_ratio}, Cumin ratio: {cumin_ratio}")
 
-# Swap values using tuple unpacking (Pythonic way!)
+# Swap values using tuple unpacking or destructuring (Pythonic way!)
 cumin_ratio, ginger_ratio = ginger_ratio, cumin_ratio
 print(f"After swap - Ginger ratio: {ginger_ratio}, Cumin ratio: {cumin_ratio}")
 
-# Advanced unpacking with * (star operator)
+# Advanced unpacking with * (star operator) or destructuring
 spice_1, *remaining_spices = spice_mix 
 print(f"First spice: {spice_1}")
 print(f"Remaining spices: {remaining_spices} (type: {type(remaining_spices)})")
 
-# Unpacking with * in the middle
+# Unpacking with * in the middle or destructuring (remaining elements)  
 first, *middle, last = ("a", "b", "c", "d", "e")
 print(f"First: {first}, Middle: {middle}, Last: {last}")
 

@@ -14,6 +14,8 @@ print(result_sum)
 def chai_report(sold, remaining, notPaid):
     return sold, remaining, notPaid
 
+result_chai_report = chai_report(14, 5, 1)
+print("type", type(result_chai_report), "value", result_chai_report)
 sold, remaining, notPaid = chai_report(14, 5, 1)
 print(f"total sold chai is {sold} and total remaining chai is {remaining} and not paid is {notPaid}")
 

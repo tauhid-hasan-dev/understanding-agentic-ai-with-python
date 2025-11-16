@@ -1,3 +1,11 @@
+"""
+Nonlocal and Global Keywords in Python
+
+Nonlocal: with this keyword we can modify the variable in the enclosing scope (inside to inside function)
+Global: with this keyword we can modify the variable in the global scope
+
+"""
+
 # Be very careful when you use nonlocal and global 
 
 chai_type = "ginger"
@@ -7,10 +15,8 @@ def understading_non_local_and_global():
     chai_type = "lemon"
     print(f"Local before convertion' : {chai_type}")
     def testing_nonlocal():
-        nonlocal chai_type # non local does not work on any global variable, it only works
-        chai_type = "tulsi"
-        print(f"Converting local to nonlocal from 'lemon' to 'tulsi' : {chai_type}")
-        # changing the global variable using "global" keyword
+        nonlocal chai_type
+        chai_ type = "tulsi"
         def testing_global():
             global chai_type
             chai_type = "Black"

@@ -16,9 +16,12 @@ def make_chai(tea, milk, sugar):
 make_chai("Bangladesh", "Yes", "low")
 
 # Named arguments
-make_chai(tea="Srilanka", milk="No", sugar="high")
+make_chai(tea="Srilanka", sugar="high", milk="No")
 
 # using both postioned and named arguments using * and ** 
+# * collects positional arguments into a tuple
+# ** collects keyword arguments into a dictionary
+
 def special_chai(*ingredients, **extras):
     print("Ingredients", type(ingredients), ":", ingredients)
     print("Extras", type(extras),":", extras)
