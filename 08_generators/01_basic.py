@@ -4,13 +4,24 @@
 # Generators are more memory efficient than lists.
 
 # Example of a generator function
+# In normal function, return is used to return a value from a function but in generator function, 
+# yield is a keyword that is used to generate a value from a generator function.
+
+def my_normal_function():
+    return ["apple", "banana", "cherry"]
+
+
+# my_normal_function_object = my_normal_function()
+# print(my_normal_function_object)
+
 def my_generator():
-    yield 1
-    yield 2
-    yield 3
+    yield "apple"
+    yield "banana"
+    yield "cherry"
 
-# Example of using a generator
-for value in my_generator():
-    print(value)
+my_generator_object = my_generator()
+print(next(my_generator_object)) # next is a built-in function that is used to get the next value from a generator object.  
+print(next(my_generator_object)) # it will return the next value from the generator object.
+print(next(my_generator_object))
+# print(next(my_generator_object)) # it will raise a StopIteration error because there are no more values to return.
 
-# Example of a generator expression
